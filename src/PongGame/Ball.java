@@ -26,7 +26,6 @@ public class Ball extends Rectangle {
       int speed;
       speed =  (int) (100*dt);
        System.out.println(speed);
-      //System.out.println("ballX:"+x+""+"ball:"+y);
     }
    
      public void draw(Graphics g){ 
