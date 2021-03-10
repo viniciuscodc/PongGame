@@ -14,7 +14,7 @@ import java.awt.*;
 public class Score extends Rectangle {
     
     private int player;
-    String scoreText;
+    private String scoreText;
     
     Score(int x, int y, int player,String scoreText){
         this.x = x;

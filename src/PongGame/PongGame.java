@@ -17,18 +17,18 @@ import java.awt.*;
 
 public class PongGame extends JPanel implements Runnable{
    
-   public final int WINDOW_WIDTH = 800;
-   public final int WINDOW_HEIGHT = 500;
+   private final int WINDOW_WIDTH = 800;
+   private final int WINDOW_HEIGHT = 500;
    private final int PADDLE_WIDTH = 20;
    private final int PADDLE_HEIGHT = 75;
    private final int BALL_DIAMETER = 20;
    
-   Thread panelThread;
-   int posx = WINDOW_WIDTH/2;
-   int posy = WINDOW_HEIGHT/2;  
-   int scoreCount1 =0;
-   int scoreCount2 =0;
-   double dt;
+   private Thread panelThread;
+   private int posx = WINDOW_WIDTH/2;
+   private int posy = WINDOW_HEIGHT/2;  
+   private int scoreCount1 =0;
+   private int scoreCount2 =0;
+   private  double dt;
    private boolean running;
    
    Ball balls;
@@ -76,8 +76,8 @@ public class PongGame extends JPanel implements Runnable{
         
         //pass arguments to ball
         balls = new Ball(randomx,randomy,BALL_DIAMETER,BALL_DIAMETER);
-         balls.velocx = randomSpeedx;
-         balls.velocy = randomSpeedy;
+        balls.velocx = randomSpeedx;
+        balls.velocy = randomSpeedy;
     }
     
     public void gameStart(){ 
@@ -118,7 +118,6 @@ public class PongGame extends JPanel implements Runnable{
        
        //pad1 top
          if(balls.x<=pad1.x+PADDLE_WIDTH && balls.y+BALL_DIAMETER>=pad1.y && balls.y+BALL_DIAMETER<pad1.y+20){
-        //  System.out.println("DEU CERTO");
             balls.velocx= -balls.velocx;
             balls.y = pad1.y-BALL_DIAMETER-2;
             balls.velocy= -balls.velocy;
@@ -138,8 +137,6 @@ public class PongGame extends JPanel implements Runnable{
          
         //pad1 bottom    
         if(balls.x<=pad1.x+PADDLE_WIDTH && balls.y<=pad1.y+PADDLE_HEIGHT && balls.y>pad1.y+PADDLE_HEIGHT-20){
-        //  System.out.println("DEU CERTO");
-           //sss balls.velocx= -balls.velocx;
             balls.y = pad1.y+PADDLE_HEIGHT+2;
             balls.velocy= -balls.velocy;
         }
@@ -159,8 +156,6 @@ public class PongGame extends JPanel implements Runnable{
         
         //pad2 bottom    
         if(balls.x>=pad2.x && balls.y<=pad2.y+PADDLE_HEIGHT && balls.y>pad2.y+PADDLE_HEIGHT-20){
-        //  System.out.println("DEU CERTO");
-          //  balls.velocx= -balls.velocx;
             balls.y = pad2.y+PADDLE_HEIGHT+2;
             balls.velocy= -balls.velocy;
         }
@@ -168,7 +163,6 @@ public class PongGame extends JPanel implements Runnable{
         
         //pad2 top
          if(balls.x>=pad2.x && balls.y+BALL_DIAMETER>=pad2.y && balls.y+BALL_DIAMETER<pad2.y+20){
-        //  System.out.println("DEU CERTO");
             balls.velocx= -balls.velocx;
             balls.y = pad2.y-BALL_DIAMETER-2;
             balls.velocy= -balls.velocy;
