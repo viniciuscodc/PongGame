@@ -17,10 +17,6 @@ public class Paddle extends Rectangle  {
     private int player;
     public int velocity;
     private int speed = 1;
-    private boolean up1 = false;
-    private boolean up2 = false;
-    private boolean down1 = false;
-    private boolean down2 = false;
  
     Paddle(int x, int y , int width,int height, int player){
         super(x, y ,width,height);

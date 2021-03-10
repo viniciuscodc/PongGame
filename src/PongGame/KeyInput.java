@@ -31,7 +31,6 @@ public class KeyInput extends KeyAdapter{
         int key = e.getKeyCode();   
         
             if(key == KeyEvent.VK_W) {
-                System.out.println(key);
                 pad1.switchDirection(-1);
                 up1 = true;
             }               

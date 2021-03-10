@@ -17,18 +17,18 @@ import java.awt.*;
 
 public class PongGame extends JPanel implements Runnable{
    
-   public final int WINDOW_WIDTH = 800;
-   public final int WINDOW_HEIGHT = 500;
+   private final int WINDOW_WIDTH = 800;
+   private final int WINDOW_HEIGHT = 500;
    private final int PADDLE_WIDTH = 20;
    private final int PADDLE_HEIGHT = 75;
    private final int BALL_DIAMETER = 20;
    
-   Thread panelThread;
-   int posx = WINDOW_WIDTH/2;
-   int posy = WINDOW_HEIGHT/2;  
-   int scoreCount1 =0;
-   int scoreCount2 =0;
-   double dt;
+   private Thread panelThread;
+   private int posx = WINDOW_WIDTH/2;
+   private int posy = WINDOW_HEIGHT/2;  
+   private int scoreCount1 =0;
+   private int scoreCount2 =0;
+   private  double dt;
    private boolean running;
    
    Ball balls;

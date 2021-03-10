@@ -13,8 +13,8 @@ import java.awt.*;
  */
 public class Ball extends Rectangle {
     
-    int velocx = 1;
-    int velocy = 1;
+    public int velocx = 1;
+    public int velocy = 1;
     
     Ball(int x, int y, int width, int height){
         super(x,y,width, height);
@@ -25,7 +25,6 @@ public class Ball extends Rectangle {
       y = (int) (y+velocy*dt*320); 
       int speed;
       speed =  (int) (100*dt);
-       System.out.println(speed);
     }
    
      public void draw(Graphics g){ 

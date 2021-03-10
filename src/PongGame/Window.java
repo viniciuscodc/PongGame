@@ -13,7 +13,7 @@ import javax.swing.*;
  */
 public class Window extends JFrame {
     
-    PongGame pong;
+    private PongGame pong;
     
     public Window( ){
         
