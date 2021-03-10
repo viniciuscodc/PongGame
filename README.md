@@ -6,9 +6,9 @@ The paddles have top and bottom collision and sometimes dont work properly, but 
 
 **Controls:**
 
-W and S controls left side for player red
+W and S left side for player red
 
-UP and DOWN controls left side for player red
+UP and DOWN right side for player blue
 
 **Game preview:**
 
