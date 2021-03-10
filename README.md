@@ -11,4 +11,5 @@ W and S controls left side for player red
 UP and DOWN controls left side for player red
 
 Game preview:
+
 <img src="preview.png" alt="drawing" width="500"/>
