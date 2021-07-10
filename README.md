@@ -1,8 +1,16 @@
 # PongGame
 
-A Pong game made in java. It can be executed using a java IDE. The project archive was generated using Apache Netbeans IDE.
+A Pong game made in java. 
 
-The paddles have top and bottom collision and sometimes dont work properly, but it can be disabled commenting the code.
+**Running:**
+Install java sdk then go to src folder in terminal and type:
+
+```
+javac PongGame/Start.java
+```
+```
+java PongGame.Start
+```
 
 **Controls:**
 
