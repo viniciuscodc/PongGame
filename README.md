@@ -1,6 +1,6 @@
 # PongGame
 
-A Pong game made in java. 
+A Pong game made in java, tested in Windows. 
 
 **Running:**
 Install java sdk then go to src folder in terminal and type:
