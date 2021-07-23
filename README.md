@@ -3,7 +3,7 @@
 A Pong game made in java, tested in Windows. 
 
 **Running:**
-Install java sdk then go to src folder in terminal and type:
+Install java sdk then open PongGame.jar or install java jdk and go to src folder in terminal and type:
 
 ```
 javac PongGame/Start.java
